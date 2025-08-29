@@ -1,0 +1,60 @@
+{
+  "routes": [
+    { "src": "/bfhl", "dest": "/REST_API.py" }
+  ]
+}
+Example A 
+
+Request
+{
+"data": [“a”,”1”,”334”,”4”,”R”, “$”]
+}
+Response
+{
+"is_success": true,
+"user_id": "john_doe_17091999",
+“email” : “john@xyz.com”,
+“roll_number”:”ABCD123”,
+"odd_numbers": [“1”],
+"even_numbers": [“334”,”4”],
+"alphabets": [“A”,”R”],
+“special_characters”: [“$”],
+"sum": "339" // return sum as a string
+"concat_string": "Ra"
+}
+Example B
+Request
+{
+"data": [“2”,"a", "y", ”4”, ”&”, “-”, “*”, ”5”,”92”,”b”]
+}
+Response
+{
+"is_success": true,
+"user_id": "john_doe_17091999",
+“email” : “john@xyz.com”,
+“roll_number”:”ABCD123”,
+"odd_numbers": [”5”],
+"even_numbers": [“2”,”4”,”92”],
+"alphabets": [“A”, "Y", “B”],
+“sepcial_characters”: [“&”, “-”, “*”],
+"sum": "103",
+"concat_string": "ByA"
+}
+Example C
+Request
+{
+"data": ["A",”ABcD”,”DOE”]
+}
+Response
+{
+"is_success": true,
+"user_id": "john_doe_17091999",
+“email” : “john@xyz.com”,
+“roll_number”:”ABCD123”,
+"odd_numbers": [],
+"even_numbers": [],
+"alphabets": ["A",”ABCD”,”DOE”],
+“special_characters”: [],
+"sum": "0",
+"concat_string": "EoDdCbAa"
+}
